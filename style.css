@@ -7,7 +7,7 @@ body{
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: min-content 5fr;
 }
 *{
     box-sizing: border-box;
@@ -35,4 +35,33 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.search-profile-container{
+    display: grid;
+    grid-template-rows: min-content min-content;
+    padding: var(--global-padding) calc(2*var(--global-padding));
+}
+
+.search-profile-container > .search-bar{
+    display:flex;
+    justify-content: space-between;
+}
+
+.search-profile-container > .profile{
+    display: flex;
+    justify-content: space-between;
+}
+.profile > .profile-greeting{
+    display:flex;
+    gap: var(--global-padding);
+    align-items: center;
+}
+
+.profile > .profile-media-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--global-padding)
+}
+
 
