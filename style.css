@@ -63,5 +63,22 @@ body{
     align-items: center;
     gap: var(--global-padding)
 }
+.projects-container{
+    display:grid;
+    grid-template-columns: 1fr min-content; 
+    grid-template-rows: 1fr 1fr; 
+    gap: var(--global-padding);
+    padding: var(--global-padding)
+}
+.projects-container > .projects-wrapper{
+    grid-row: 1 / 3;
+   
+}
+.projects-wrapper > .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: var(--global-padding);
+}
+
 
 
