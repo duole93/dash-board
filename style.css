@@ -65,7 +65,7 @@ body{
 }
 .projects-container{
     display:grid;
-    grid-template-columns: 1fr min-content; 
+    grid-template-columns: 3fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: var(--global-padding);
     padding: var(--global-padding)
@@ -79,6 +79,23 @@ body{
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     gap: var(--global-padding);
 }
+.projects > .project-card{
+    padding: calc(1.5*var(--global-padding)) var(--global-padding) 
+} 
 
+.announcement {
+    padding: calc(1.5*var(--global-padding)) var(--global-padding) ;
+    display:flex; 
+    flex-direction:column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.trending{ 
+    padding:  var(--global-padding) ;
+    display:flex; 
+    flex-direction:column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 
