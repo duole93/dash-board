@@ -1,13 +1,20 @@
 :root{
-    --global-padding: 15px;
-}
+    --global-padding: 15px; 
+    --color-bg: #D2E3C8; 
+    --color-side-bar-bg: #4F6F52;
+    --color-side-bar-text: #FFF;
+    --color-other: #D2E3C8; 
+    --icon-size: 1.3rem;
+} 
+
 
 body{
     margin:0;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: min-content 5fr;
+    grid-template-rows: min-content 5fr;  
+    background: #86A789;
 }
 *{
     box-sizing: border-box;
@@ -18,7 +25,9 @@ body{
     flex-direction: column;
     align-items: flex-start;
     gap: calc(3*var(--global-padding));
-    padding:var(--global-padding);
+    padding:var(--global-padding); 
+    background-color: var(--color-side-bar-bg);
+    color: var(--color-side-bar-text);
 }
 .side-nav-logo p{
     display:flex;
@@ -29,6 +38,7 @@ body{
 .side-nav-logo #logo{
     width: 2rem;
     height: 2rem;
+    fill: var(--color-side-bar-text);
 }
 .side-nav-container ul{
     display: flex;
@@ -44,22 +54,43 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap: var(--global-padding);
-    text-decoration: none;
+    text-decoration: none; 
+    color: var(--color-side-bar-text);
 }  
 
 .side-nav-container ul li a > svg{
-    width: 1.3rem;
-    height: 1.3rem
+    width: var(--icon-size);
+    height: var(--icon-size) ;
+    fill: var(--color-side-bar-text);
 }
 .search-profile-container{
     display: grid;
     grid-template-rows: min-content min-content;
     padding: var(--global-padding) calc(2*var(--global-padding));
+    background-color: var(--color-other);
 }
 
 .search-profile-container > .search-bar{
     display:flex;
     justify-content: space-between;
+    align-items: center;
+}
+.search-bar  svg{ 
+    display:block;
+    width: var(--icon-size); 
+    height:var(--icon-size);
+}
+.search-bar .search-bar-left, .search-bar-right{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: var(--global-padding);
+}
+.search-bar .search-bar-left button{
+    margin:0;
+    padding:0;
+    border:0;
+    background-color: var(--color-other);
 }
 
 .search-profile-container > .profile{
