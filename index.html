@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dash Board</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="side-nav-container">
         <div class="side-nav-logo"> 
-            <p> <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>face-man-profile</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,8.39C13.57,9.4 15.42,10 17.42,10C18.2,10 18.95,9.91 19.67,9.74C19.88,10.45 20,11.21 20,12C20,16.41 16.41,20 12,20C9,20 6.39,18.34 5,15.89L6.75,14V13A1.25,1.25 0 0,1 8,11.75A1.25,1.25 0 0,1 9.25,13V14H12M16,11.75A1.25,1.25 0 0,0 14.75,13A1.25,1.25 0 0,0 16,14.25A1.25,1.25 0 0,0 17.25,13A1.25,1.25 0 0,0 16,11.75Z" /></svg>
-             <span>Dashboard</span></p>
+            <h1> <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>face-man-profile</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,8.39C13.57,9.4 15.42,10 17.42,10C18.2,10 18.95,9.91 19.67,9.74C19.88,10.45 20,11.21 20,12C20,16.41 16.41,20 12,20C9,20 6.39,18.34 5,15.89L6.75,14V13A1.25,1.25 0 0,1 8,11.75A1.25,1.25 0 0,1 9.25,13V14H12M16,11.75A1.25,1.25 0 0,0 14.75,13A1.25,1.25 0 0,0 16,14.25A1.25,1.25 0 0,0 17.25,13A1.25,1.25 0 0,0 16,11.75Z" /></svg>
+             <span>Dashboard</span></h1>
         </div>
         <ul class="main-tab">
-            <li><a href="http://">
+            <li class="active"><a href="http://">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg><span>Home</span></a></li>
             <li><a href="http://">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>card-account-details</title><path d="M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z" /></svg><span>Profile</span></a></li>
@@ -56,7 +59,8 @@
             <div class="search-bar-right">
                 <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-outline</title><path d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" /></svg></span></a>
                 
-                <a class="profile-link" href="#"><svg id="profile-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" sytyle="display:block"><title>face-man-profile</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,8.39C13.57,9.4 15.42,10 17.42,10C18.2,10 18.95,9.91 19.67,9.74C19.88,10.45 20,11.21 20,12C20,16.41 16.41,20 12,20C9,20 6.39,18.34 5,15.89L6.75,14V13A1.25,1.25 0 0,1 8,11.75A1.25,1.25 0 0,1 9.25,13V14H12M16,11.75A1.25,1.25 0 0,0 14.75,13A1.25,1.25 0 0,0 16,14.25A1.25,1.25 0 0,0 17.25,13A1.25,1.25 0 0,0 16,11.75Z" /><span><h3>Morgan Oakley</h3></span></a>
+                <svg id="profile-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" sytyle="display:block"><title>face-man-profile</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,8.39C13.57,9.4 15.42,10 17.42,10C18.2,10 18.95,9.91 19.67,9.74C19.88,10.45 20,11.21 20,12C20,16.41 16.41,20 12,20C9,20 6.39,18.34 5,15.89L6.75,14V13A1.25,1.25 0 0,1 8,11.75A1.25,1.25 0 0,1 9.25,13V14H12M16,11.75A1.25,1.25 0 0,0 14.75,13A1.25,1.25 0 0,0 16,14.25A1.25,1.25 0 0,0 17.25,13A1.25,1.25 0 0,0 16,11.75Z" /><span>
+                <a class="profile-link" href="#"><h3>Morgan Oakley</h3></span></a>
             </div>
         </div>
         <div class="profile">
@@ -176,21 +180,18 @@
             <h3>Announcement</h3>
             <div class="announcement">
                 <div class="page">
-                    <p>Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias possimus rerum consequatur
-                        laborum eligendi? Blanditiis!
+                    <p>Task 1</p>
+                    <p>Add shadows box for the cards, search-profile-container, announcement and trending.
                     </p>
                 </div>
                 <div class="page">
-                    <p>Community Share Day</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias possimus rerum consequatur
-                        laborum eligendi? Blanditiis!
+                    <p>Task 2</p>
+                    <p>Figure out color palette for the webiste. adjust font color for text, anchor, svg and button.
                     </p>
                 </div>
                 <div class="page">
-                    <p>Updated Privacy Policy</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias possimus rerum consequatur
-                        laborum eligendi? Blanditiis!
+                    <p>Task 3</p>
+                    <p>Add hover effect, click/action, cursor for anchor and button tags
                     </p>
                 </div>
             </div>

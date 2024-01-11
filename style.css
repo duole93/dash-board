@@ -12,10 +12,13 @@
 body{
     margin:0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: min-content 5fr;  
     background: var(--color-background);
+    height: 100vh;
+    color: rgb(70, 73, 71);
 }
 
 a{
@@ -43,24 +46,37 @@ svg{
     background-color: var(--color-side-bar-bg);
     color: var(--color-side-bar-text);
 }
-.side-nav-logo p{
+.side-nav-logo h1{
     display:flex;
     justify-content: center;
     align-items: center;
     gap: var(--global-padding)
 } 
 .side-nav-logo #logo{
-    width: calc(2*var(--icon-size));
-    height: calc(2*var(--icon-size));
+    width: calc(2.5*var(--icon-size));
+    height: calc(2.5*var(--icon-size));
 }
 .side-nav-container ul{
     display: flex;
     flex-direction: column;
-    gap: var(--global-padding);
     list-style-type: none;
     margin: 0;
     padding: 0; 
     width: 100%;
+}
+.side-nav-container ul li{
+    padding: calc(var(--global-padding));
+}
+.side-nav-container ul li.active{
+    border-left: 5px solid var(--color-other);
+    background-color: var(--color-background);
+    
+}
+li.active svg{
+    fill: var(--color-side-bar-bg);
+}
+.side-nav-container ul li:hover{
+    border-left: 5px solid var(--color-bg);
 }
 .side-nav-container ul li a{
     display: flex; 
@@ -79,6 +95,11 @@ svg{
     grid-template-rows: min-content min-content;
     padding: var(--global-padding) calc(2*var(--global-padding));
     background-color: var(--color-other);
+    box-shadow: 0 0px 10px var(--color-side-bar-bg);
+    color: var(--color-side-bar-bg)
+}
+.search-profile-container a{
+    color: var(--color-side-bar-bg);
 }
 
 .search-profile-container > .search-bar{
@@ -86,7 +107,7 @@ svg{
     justify-content: space-between;
     align-items: center;
 }
-.search-bar  svg{ 
+.search-bar svg{ 
     display:block;
     width: var(--icon-size); 
     height:var(--icon-size);
@@ -101,18 +122,39 @@ svg{
 .search-bar .search-bar-left {
     flex-grow: 1;
 }
+
 .search-bar .search-bar-left button{
     margin:0;
     padding:0;
     border:0;
     background-color: var(--color-other);
 }
+.search-bar svg:hover{
+    fill: var(--color-side-bar-bg);
+}
+
 .search-bar .search-bar-left #search-bar{
     border-radius: 50px;
+    outline: 0;
     border: 0;
     width: 80%;
-    height: calc(1.5*var(--icon-size));
+    font-size: 1rem;
+    /* height: calc(1.5*var(--icon-size)); */
     background-color: var(--color-background);
+    padding: calc(0.5*var(--global-padding)) var(--global-padding);
+}
+
+.search-bar .search-bar-left #search-bar:focus{
+    outline: 2px solid var(--color-side-bar-bg)
+}
+.search-bar .search-bar-right a{
+    color: var(--color-background);
+}
+.search-bar .search-bar-right a:hover{
+    color:var(--color-side-bar-bg);
+}
+.search-bar .search-bar-right #profile-logo:hover{
+    fill: var(--color-side-bar-bg);
 }
 
 .search-bar .search-bar-right a.profile-link {
@@ -144,6 +186,10 @@ svg{
     fill:var(--color-background);
 }
 
+.profile #profile-logo-large:hover{
+    fill: var(--color-side-bar-bg);
+}
+
 .profile .profile-text{
     display: flex;
     flex-direction: column;
@@ -161,13 +207,18 @@ svg{
 .profile-media-btn button{
     width: 100px;
     border:0;
+    font-size: 1rem;
     border-radius: 50px;
     padding: calc(0.5*var(--global-padding)) var(--global-padding)  ;
     background-color: var(--color-side-bar-bg);
-    color:var(--color-side-bar-text);
+    color:var(--color-other);
     cursor: pointer;
 }
 
+.profile-media-btn button:hover{
+    background-color: var(--color-background);
+    color: var(--color-side-bar-bg);
+}
 
 .projects-container{
     display:grid;
@@ -200,6 +251,8 @@ svg{
     border-left: 0.5rem solid var(--color-side-bar-bg);
     background-color: var(--color-other);
     padding: calc(2*var(--global-padding));
+    box-shadow: 1px 1px 10px var(--color-side-bar-bg);
+
 }
 
 .project-card .card-info{
@@ -231,6 +284,7 @@ svg{
     align-items: flex-start;
     background: var(--color-other);
     padding: calc(1.5*var(--global-padding)) calc(1.5*var(--global-padding)) ;
+    box-shadow: 1px 1px 10px var(--color-side-bar-bg);
 }
 .announcement .page{
     font-size: 0.8rem;
@@ -256,6 +310,7 @@ svg{
     gap: var(--global-padding);
     background: var(--color-other);
     padding:  var(--global-padding);
+    box-shadow: 1px 1px 10px var(--color-side-bar-bg);
 }
 .trending .trending-item{
     display:flex;
